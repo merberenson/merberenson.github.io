@@ -1,0 +1,193 @@
+/* Base layout, also yes thats my linkedin pic. I feel bonita */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Top section: logo/slogan */
+.logo-slogan {
+  text-align: center;
+  background-color: rgba(50, 30, 20, 0.85);
+  padding: 1.5rem 1rem;
+  border-bottom: 2px solid #885533;
+}
+
+.logo-slogan h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #ffeccc;
+}
+
+.logo-slogan p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  color: #ffddaa;
+}
+
+/* Headshot area */
+.header-banner {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(60, 40, 25, 0.85);
+}
+
+/* Bonita pic border */
+.profile-img {
+  max-width: 170px;
+  border-radius: 12px;
+  border: 3px solid white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Divider line and headshot alignment */
+.headshot-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.divider-line {
+  height: 200px;
+  width: auto;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 2px #eecb9b);
+}
+
+/* Navigation bar */
+.main-nav {
+  text-align: center;
+  background-color: rgba(40, 25, 15, 0.9);
+  padding: 0.7rem;
+  border-top: 1px solid #553322;
+  border-bottom: 1px solid #553322;
+}
+
+.main-nav a {
+  color: #ffddaa;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+}
+
+/* Grid layout */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Containers */
+.about,
+.quick-links {
+  background-color: rgba(40, 30, 20, 0.85);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Section headers */
+.section-title {
+  text-align: center;
+  color: #ffe9cc;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ffddaa;
+  padding-bottom: 0.5rem;
+}
+
+/* Zebra Table */
+.zebra {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.zebra td {
+  padding: 0.5rem;
+}
+
+.zebra tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.zebra tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+a {
+  color: #ffefcf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffe100;
+  text-decoration: underline;
+}
+
+/* Highlight */
+.highlight, .keyword {
+  font-weight: bold;
+  color: red;
+}
+
+/* Quote - Throne of Glass has unbeatable quotes imo */
+.quote {
+  font-style: italic;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-left: 4px solid #ffaa66;
+  background-color: rgba(70, 50, 35, 0.75);
+  color: #ffddcc;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(35, 25, 15, 0.9);
+  color: #ffd6aa;
+  font-size: 0.9rem;
+}
+
+/* Image containers for chip and book yayyy */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.image-container img {
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  display: block;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
